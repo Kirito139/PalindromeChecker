@@ -2,7 +2,7 @@ public void setup() {
   String lines[] = loadStrings("palindromes.txt");
   String foobar = new String();
   System.out.println("there are " + lines.length + " lines");
-  for (int i=0; i < lines.length; i++) {
+  for (int i = 0; i < lines.length; i++) {
     foobar = onlyLetters(lines[i]).toLowerCase();
     if(palindrome(foobar)) System.out.println(lines[i] + " IS a palindrome.");
     else System.out.println(lines[i] + " is NOT a palindrome.");
